@@ -46,7 +46,7 @@ export default function Navbar() {
                     <Link href="/" className="flex items-center gap-2 group">
                         <div className="relative flex h-9 w-9 items-center justify-center transition-transform group-hover:scale-105">
                             <img
-                                src="https://ik.imagekit.io/dypkhqxip/sf-next-logo"
+                                src="/logo.png"
                                 alt="Student Forge Logo"
                                 className="h-full w-full object-contain"
                             />

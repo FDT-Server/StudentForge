@@ -51,7 +51,7 @@ export default function Home() {
             <div className="flex items-center gap-2 text-zinc-900 group">
               <div className="relative flex h-8 w-8 items-center justify-center transition-transform group-hover:scale-110">
                 <img
-                  src="https://ik.imagekit.io/dypkhqxip/sf-next-logo"
+                  src="/logo.png"
                   alt="Student Forge Logo"
                   className="h-full w-full object-contain"
                 />
