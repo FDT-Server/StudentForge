@@ -76,7 +76,7 @@ export default function Hero() {
                         className="relative w-[85%] sm:w-full max-w-[350px] sm:max-w-[450px] lg:max-w-full"
                     >
                         <img
-                            src="/hero-image.png"
+                            src="https://ik.imagekit.io/dypkhqxip/sf-next-hero"
                             alt="Student Forge Illustration"
                             className="relative z-10 w-full"
                         />
