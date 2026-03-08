@@ -1,31 +1,34 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, LayoutGrid, BookOpen, Laptop, Briefcase, Award } from "lucide-react";
+import { ChevronDown, Home, BookOpen, Code, TrendingUp, Calendar, Mail } from "lucide-react";
 
 export default function SubNavbar() {
-    const categories = [
-        { name: "Browse", icon: <LayoutGrid size={16} /> },
-        { name: "Web Development", icon: <Laptop size={16} /> },
-        { name: "Data Science", icon: <BookOpen size={16} /> },
-        { name: "Business", icon: <Briefcase size={16} /> },
-        { name: "Design", icon: <Award size={16} /> },
+    const links = [
+        { name: "Home", href: "/", icon: <Home size={16} /> },
+        { name: "Learn with Forge", href: "/learn", icon: <BookOpen size={16} /> },
+        { name: "Build with Forge", href: "/build", icon: <Code size={16} /> },
+        { name: "Grow with Forge", href: "/grow", icon: <TrendingUp size={16} /> },
+        { name: "Events", href: "/events", icon: <Calendar size={16} /> },
+        { name: "Contact Us", href: "/contact", icon: <Mail size={16} /> },
     ];
 
     return (
         <div className="w-full border-b border-zinc-100 bg-white">
             <div className="mx-auto flex h-12 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8 overflow-x-auto no-scrollbar">
-                {categories.map((cat) => (
+                {links.map((link) => (
                     <Link
-                        key={cat.name}
-                        href="#"
+                        key={link.name}
+                        href={link.href}
                         className="flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-zinc-600 transition-colors hover:text-indigo-600 group"
                     >
                         <span className="text-zinc-400 group-hover:text-indigo-500 transition-colors">
-                            {cat.icon}
+                            {link.icon}
                         </span>
-                        {cat.name}
-                        <ChevronDown size={14} className="text-zinc-300" />
+                        {link.name}
+                        {link.name !== "Home" && link.name !== "Contact Us" && (
+                            <ChevronDown size={14} className="text-zinc-300 group-hover:text-indigo-300 transition-colors" />
+                        )}
                     </Link>
                 ))}
 
