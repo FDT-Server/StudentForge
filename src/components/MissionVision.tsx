@@ -11,13 +11,33 @@ export default function MissionVision() {
     ];
 
     return (
-        <section className="relative py-24 md:py-32 overflow-hidden bg-white">
+        <section className="relative py-20 md:py-24 overflow-hidden bg-white">
             {/* Background Decorative Element */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full opacity-[0.03] pointer-events-none">
                 <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--color-indigo-600)_0%,_transparent_70%)]" />
             </div>
 
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16 md:mb-20">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl lg:text-5xl"
+                    >
+                        Building the Future, <span className="text-indigo-600">Together</span>
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="mt-3 text-base md:text-lg text-zinc-600 max-w-2xl mx-auto"
+                    >
+                        We are more than just a platform; we are a movement dedicated to unlocking human potential.
+                    </motion.p>
+                </div>
+
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
 
                     {/* Vision Card - Modern Glass Layout */}
@@ -86,7 +106,7 @@ export default function MissionVision() {
                         <div className="mt-auto">
                             <div className="flex items-center gap-6 mb-8 overflow-hidden">
                                 <div className="h-px bg-zinc-100 flex-grow" />
-                                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 whitespace-nowrap">Core Values</span>
+                                <span className="text-[10px] font-bold tracking-[0.05em] text-zinc-400 whitespace-nowrap">Core Values</span>
                                 <div className="h-px bg-zinc-100 flex-grow" />
                             </div>
 
