@@ -13,7 +13,7 @@ export default function Home() {
         <MissionVision />
 
         {/* Features Section */}
-        <section id="features" className="bg-zinc-50 py-24 sm:py-32">
+        <section id="features" className="bg-zinc-50 py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base font-semibold leading-7 text-indigo-600 uppercase tracking-wide">Next Generation Learning</h2>
@@ -45,7 +45,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-100 bg-white py-12">
+      <footer className="border-t border-zinc-100 bg-white py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-2 text-zinc-900 group">

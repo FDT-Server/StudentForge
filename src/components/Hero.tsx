@@ -6,9 +6,9 @@ import { ArrowRight } from "lucide-react";
 export default function Hero() {
     return (
         <section className="relative overflow-hidden bg-white border-b border-zinc-50">
-            <div className="mx-auto flex max-w-7xl flex-col items-center px-4 pt-12 pb-8 sm:px-6 lg:flex-row lg:px-8 lg:pt-20 lg:pb-12">
+            <div className="mx-auto flex max-w-7xl flex-col items-center px-4 pt-8 pb-8 sm:px-6 lg:flex-row lg:px-8 lg:pt-14 lg:pb-12">
                 {/* Left Content (Banner Style) */}
-                <div className="relative z-10 w-full text-center lg:text-left lg:w-3/5 lg:pr-16 order-2 lg:order-1 mt-10 lg:mt-0">
+                <div className="relative z-10 w-full text-center lg:text-left lg:w-3/5 lg:pr-16 order-2 lg:order-1 mt-6 lg:mt-0">
                     <motion.h1
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
