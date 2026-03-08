@@ -16,7 +16,7 @@ export default function Home() {
         <section id="features" className="bg-zinc-50 py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600 uppercase tracking-wide">Next Generation Learning</h2>
+              <h2 className="text-base font-semibold leading-7 text-indigo-600 tracking-wide">Next generation learning</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
                 Everything you need to thrive in the modern world
               </p>

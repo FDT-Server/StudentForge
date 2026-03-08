@@ -52,21 +52,21 @@ export default function Hero() {
                     >
                         <div className="flex flex-col gap-1.5">
                             <span className="text-3xl font-bold tracking-tight text-zinc-900 leading-none">10k<span className="text-indigo-600">+</span></span>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">Active Learners</span>
+                            <span className="text-[10px] font-bold tracking-[0.05em] text-zinc-400">Active Learners</span>
                         </div>
 
                         <div className="h-8 w-px bg-zinc-100 hidden sm:block" />
 
                         <div className="flex flex-col gap-1.5">
                             <span className="text-3xl font-bold tracking-tight text-zinc-900 leading-none">95<span className="text-indigo-600">%</span></span>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">Success Rate</span>
+                            <span className="text-[10px] font-bold tracking-[0.05em] text-zinc-400">Success Rate</span>
                         </div>
 
                         <div className="h-8 w-px bg-zinc-100 hidden sm:block" />
 
                         <div className="flex flex-col gap-1.5">
                             <span className="text-3xl font-bold tracking-tight text-zinc-900 leading-none">4.9<span className="text-indigo-600">/5</span></span>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">Course Rating</span>
+                            <span className="text-[10px] font-bold tracking-[0.05em] text-zinc-400">Course Rating</span>
                         </div>
                     </motion.div>
                 </div>
