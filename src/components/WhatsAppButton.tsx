@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 export default function WhatsAppButton() {
-    const [showTooltip, setShowTooltip] = useState(false);
+    const [showTooltip] = useState(true);
 
     // Replace with your actual WhatsApp number
     const whatsappNumber = "919000000000";
@@ -17,8 +17,20 @@ export default function WhatsAppButton() {
                 {showTooltip && (
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8, x: 20 }}
-                        animate={{ opacity: 1, scale: 1, x: 0 }}
-                        exit={{ opacity: 0, scale: 0.8, x: 20 }}
+                        animate={{
+                            opacity: 1,
+                            scale: 1,
+                            x: 0,
+                            y: [0, -4, 0]
+                        }}
+                        transition={{
+                            y: {
+                                duration: 3,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            },
+                            default: { duration: 0.4 }
+                        }}
                         className="mb-3 flex items-center gap-2 rounded-xl bg-zinc-900 px-3 py-2 shadow-2xl"
                     >
                         <img src="/logo.png" alt="SF" className="h-5 w-5 object-contain" />
@@ -35,8 +47,6 @@ export default function WhatsAppButton() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                onMouseEnter={() => setShowTooltip(true)}
-                onMouseLeave={() => setShowTooltip(false)}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_10px_40px_rgba(37,211,102,0.4)] transition-all hover:bg-[#20ba5a]"
