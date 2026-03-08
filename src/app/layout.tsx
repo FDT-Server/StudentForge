@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import TopBanner from "@/components/TopBanner";
+import Navbar from "@/components/Navbar";
+import SubNavbar from "@/components/SubNavbar";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -22,7 +25,14 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} font-sans antialiased`}
       >
-        {children}
+        <header className="fixed top-0 z-50 w-full">
+          <TopBanner />
+          <Navbar />
+          <SubNavbar />
+        </header>
+        <main className="pt-[124px]">
+          {children}
+        </main>
       </body>
     </html>
   );

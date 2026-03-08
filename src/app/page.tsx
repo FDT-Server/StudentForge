@@ -7,31 +7,7 @@ import { ArrowRight, GraduationCap, Code, Rocket, BookOpen, Users, Zap } from "l
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-white text-zinc-950 selection:bg-indigo-100 selection:text-indigo-700">
-      {/* Navbar */}
-      <nav className="fixed top-0 z-50 w-full border-b border-zinc-100 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-lg shadow-indigo-200">
-              <GraduationCap size={24} />
-            </div>
-            <span className="text-xl font-bold tracking-tight text-zinc-900">
-              Student<span className="text-indigo-600">Forge</span>
-            </span>
-          </div>
-          <div className="hidden md:block">
-            <div className="flex items-center gap-8">
-              <Link href="#features" className="text-sm font-medium text-zinc-600 transition-colors hover:text-indigo-600">Features</Link>
-              <Link href="#about" className="text-sm font-medium text-zinc-600 transition-colors hover:text-indigo-600">About</Link>
-              <Link href="#programs" className="text-sm font-medium text-zinc-600 transition-colors hover:text-indigo-600">Programs</Link>
-              <button className="rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-zinc-800 hover:shadow-lg active:scale-95">
-                Join Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <main className="flex-grow pt-16">
+      <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative overflow-hidden px-4 pt-24 pb-32 sm:px-6 lg:px-8">
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_40%_at_50%_50%,#f5f3ff_0%,#ffffff_100%)]" />
