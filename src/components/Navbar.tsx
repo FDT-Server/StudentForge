@@ -135,9 +135,11 @@ export default function Navbar() {
                         <Search size={20} />
                     </button>
 
-                    <button className="relative rounded-full p-2 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 transition-colors">
-                        <Bell size={20} />
-                        <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-indigo-500 border-2 border-white" />
+                    <button className="hidden sm:flex items-center gap-2 rounded-full bg-red-600 px-4 py-2 text-xs font-bold text-white transition-all hover:bg-red-700 active:scale-95 shadow-sm shadow-red-100">
+                        <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" />
+                        </svg>
+                        <span className="tracking-wider">SF MERCH</span>
                     </button>
 
                     <div className="hidden h-6 w-px bg-zinc-200 sm:block" />
