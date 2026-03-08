@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Target, Eye } from "lucide-react";
 
 export default function MissionVision() {
     return (
@@ -39,16 +38,11 @@ export default function MissionVision() {
                         className="bg-indigo-600 text-white py-12 pl-8 md:pl-16 pr-12 md:pr-24 shadow-2xl"
                         style={{ clipPath: "polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%)" }}
                     >
-                        <div className="flex items-start gap-4 max-w-md">
-                            <div className="mt-1 bg-white/20 p-2 rounded-lg backdrop-blur-sm">
-                                <Eye className="h-6 w-6 text-white" />
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold mb-2">Our Vision</h3>
-                                <p className="text-indigo-100 text-lg leading-relaxed">
-                                    To create a world where world-class education is accessible to everyone, everywhere, enabling a global community of lifelong learners.
-                                </p>
-                            </div>
+                        <div className="max-w-md">
+                            <h3 className="text-2xl font-bold mb-2">Our Vision</h3>
+                            <p className="text-indigo-100 text-[17px] leading-relaxed">
+                                To create a world where world-class education is accessible to everyone, everywhere, enabling a global community of lifelong learners.
+                            </p>
                         </div>
                     </div>
                 </motion.div>
@@ -65,16 +59,11 @@ export default function MissionVision() {
                         className="bg-zinc-900 text-white py-12 pr-8 md:pr-16 pl-12 md:pl-24 shadow-2xl"
                         style={{ clipPath: "polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%)" }}
                     >
-                        <div className="flex items-start flex-row-reverse gap-4 max-w-md ml-auto text-right">
-                            <div className="mt-1 bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                                <Target className="h-6 w-6 text-indigo-400" />
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
-                                <p className="text-zinc-400 text-lg leading-relaxed">
-                                    To provide students and educators with cutting-edge tools, hands-on projects, and a supportive network to bridge the gap between learning and career.
-                                </p>
-                            </div>
+                        <div className="max-w-md ml-auto text-right">
+                            <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
+                            <p className="text-zinc-400 text-[17px] leading-relaxed">
+                                To provide students and educators with cutting-edge tools, hands-on projects, and a supportive network to bridge the gap between learning and career.
+                            </p>
                         </div>
                     </div>
                 </motion.div>
