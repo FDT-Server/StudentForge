@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import MissionVision from "@/components/MissionVision";
+import Testimonials from "@/components/Testimonials";
 import Ecosystem from "@/components/Ecosystem";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <MissionVision />
+        <Testimonials />
         <Ecosystem />
       </main>
 
