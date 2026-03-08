@@ -63,8 +63,8 @@ export default function Navbar() {
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder="Search for courses, skills, certificates..."
                                 className={`
-                  w-full rounded-2xl border bg-zinc-50/50 py-2.5 pl-11 pr-12 text-sm outline-none transition-all
-                  ${isFocused ? "border-indigo-500 bg-white ring-4 ring-indigo-50" : "border-zinc-200"}
+                  w-full rounded-2xl border bg-zinc-50/50 py-2.5 pl-11 pr-12 text-sm outline-none transition-all text-zinc-900 placeholder:text-zinc-500
+                  ${isFocused ? "border-indigo-500 bg-white ring-4 ring-indigo-50" : "border-zinc-200 hover:border-zinc-300"}
                 `}
                             />
 
