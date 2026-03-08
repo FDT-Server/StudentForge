@@ -19,8 +19,9 @@ export default function WhatsAppButton() {
                         initial={{ opacity: 0, scale: 0.8, x: 20 }}
                         animate={{ opacity: 1, scale: 1, x: 0 }}
                         exit={{ opacity: 0, scale: 0.8, x: 20 }}
-                        className="mb-3 rounded-xl bg-zinc-900 px-4 py-2 shadow-2xl"
+                        className="mb-3 flex items-center gap-2 rounded-xl bg-zinc-900 px-3 py-2 shadow-2xl"
                     >
+                        <img src="/logo.png" alt="SF" className="h-5 w-5 object-contain" />
                         <p className="whitespace-nowrap text-[13px] font-bold text-white tracking-tight">
                             We are here to help! 👋
                         </p>

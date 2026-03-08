@@ -14,6 +14,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Student Forge | Empowering the Future of Education",
   description: "Student Forge is a premier ed-tech platform designed to empower students and educators with cutting-edge learning tools.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
