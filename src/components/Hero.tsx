@@ -43,26 +43,30 @@ export default function Hero() {
                         </button>
                     </motion.div>
 
-                    {/* Minimalist Trust Indicators */}
+                    {/* Premium Stats Section */}
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.4 }}
-                        className="mt-10 flex flex-wrap justify-center lg:justify-start items-center gap-6 sm:gap-8 text-[11px] sm:text-[12px] font-medium uppercase tracking-widest text-zinc-400"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.6 }}
+                        className="mt-12 flex flex-wrap items-center justify-center gap-8 sm:gap-12 lg:justify-start"
                     >
-                        <div className="flex flex-col items-center lg:items-start">
-                            <span className="text-zinc-900 text-lg font-semibold">10k+</span>
-                            <span>Learners</span>
+                        <div className="flex flex-col gap-1.5">
+                            <span className="text-3xl font-bold tracking-tight text-zinc-900 leading-none">10k<span className="text-indigo-600">+</span></span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">Active Learners</span>
                         </div>
-                        <div className="hidden sm:block h-4 w-px bg-zinc-200" />
-                        <div className="flex flex-col items-center lg:items-start">
-                            <span className="text-zinc-900 text-lg font-semibold">95%</span>
-                            <span>Hiring</span>
+
+                        <div className="h-8 w-px bg-zinc-100 hidden sm:block" />
+
+                        <div className="flex flex-col gap-1.5">
+                            <span className="text-3xl font-bold tracking-tight text-zinc-900 leading-none">95<span className="text-indigo-600">%</span></span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">Success Rate</span>
                         </div>
-                        <div className="hidden sm:block h-4 w-px bg-zinc-200" />
-                        <div className="flex flex-col items-center lg:items-start">
-                            <span className="text-zinc-900 text-lg font-semibold">4.9/5</span>
-                            <span>Rating</span>
+
+                        <div className="h-8 w-px bg-zinc-100 hidden sm:block" />
+
+                        <div className="flex flex-col gap-1.5">
+                            <span className="text-3xl font-bold tracking-tight text-zinc-900 leading-none">4.9<span className="text-indigo-600">/5</span></span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400">Course Rating</span>
                         </div>
                     </motion.div>
                 </div>
