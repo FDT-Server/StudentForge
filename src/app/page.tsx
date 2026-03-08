@@ -93,9 +93,13 @@ export default function Home() {
       <footer className="border-t border-zinc-100 bg-white py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-            <div className="flex items-center gap-2 text-zinc-900">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white">
-                <GraduationCap size={18} />
+            <div className="flex items-center gap-2 text-zinc-900 group">
+              <div className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-lg bg-indigo-600 shadow-sm transition-transform group-hover:scale-110">
+                <img
+                  src="https://ik.imagekit.io/dypkhqxip/sf-next-logo"
+                  alt="Student Forge Logo"
+                  className="h-full w-full object-cover"
+                />
               </div>
               <span className="text-lg font-bold tracking-tight">StudentForge</span>
             </div>

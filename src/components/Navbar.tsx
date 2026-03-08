@@ -33,14 +33,19 @@ export default function Navbar() {
     return (
         <nav className="sticky top-0 z-40 w-full border-b border-zinc-100 bg-white/80 backdrop-blur-md">
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-lg shadow-indigo-200 cursor-pointer">
-                        <GraduationCap size={24} />
-                    </div>
-                    <span className="text-xl font-bold tracking-tight text-zinc-900 cursor-pointer">
-                        Student<span className="text-indigo-600">Forge</span>
-                    </span>
+                    <Link href="/" className="flex items-center gap-2 group">
+                        <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-indigo-600 shadow-lg shadow-indigo-200 transition-transform group-hover:scale-105">
+                            <img
+                                src="https://ik.imagekit.io/dypkhqxip/sf-next-logo"
+                                alt="Student Forge Logo"
+                                className="h-full w-full object-cover"
+                            />
+                        </div>
+                        <span className="text-xl font-bold tracking-tight text-zinc-900">
+                            Student<span className="text-indigo-600">Forge</span>
+                        </span>
+                    </Link>
                 </div>
 
                 {/* Search Bar - Center */}
