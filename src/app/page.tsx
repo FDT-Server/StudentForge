@@ -3,12 +3,14 @@
 import Link from "next/link";
 import { Code, Rocket, Users } from "lucide-react";
 import Hero from "@/components/Hero";
+import MissionVision from "@/components/MissionVision";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-white text-zinc-950 selection:bg-indigo-100 selection:text-indigo-700">
       <main className="flex-grow">
         <Hero />
+        <MissionVision />
 
         {/* Features Section */}
         <section id="features" className="bg-zinc-50 py-24 sm:py-32">
