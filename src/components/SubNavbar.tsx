@@ -1,43 +1,52 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, Home, BookOpen, Code, TrendingUp, Calendar, Mail } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export default function SubNavbar() {
     const links = [
-        { name: "Home", href: "/", icon: <Home size={16} /> },
-        { name: "Learn with Forge", href: "/learn", icon: <BookOpen size={16} /> },
-        { name: "Build with Forge", href: "/build", icon: <Code size={16} /> },
-        { name: "Grow with Forge", href: "/grow", icon: <TrendingUp size={16} /> },
-        { name: "Events", href: "/events", icon: <Calendar size={16} /> },
-        { name: "Contact Us", href: "/contact", icon: <Mail size={16} /> },
+        { name: "Home", href: "/" },
+        { name: "Learn with Forge", href: "/learn" },
+        { name: "Build with Forge", href: "/build" },
+        { name: "Grow with Forge", href: "/grow" },
+        { name: "Events", href: "/events" },
+        { name: "Contact Us", href: "/contact" },
     ];
 
     return (
-        <div className="w-full border-b border-zinc-100 bg-white">
-            <div className="mx-auto flex h-12 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8 overflow-x-auto no-scrollbar">
-                {links.map((link) => (
-                    <Link
-                        key={link.name}
-                        href={link.href}
-                        className="flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-zinc-600 transition-colors hover:text-indigo-600 group"
-                    >
-                        <span className="text-zinc-400 group-hover:text-indigo-500 transition-colors">
-                            {link.icon}
-                        </span>
-                        {link.name}
-                        {link.name !== "Home" && link.name !== "Contact Us" && (
-                            <ChevronDown size={14} className="text-zinc-300 group-hover:text-indigo-300 transition-colors" />
-                        )}
-                    </Link>
-                ))}
+        <div className="w-full border-b border-zinc-100 bg-white shadow-sm">
+            <div className="mx-auto flex h-11 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+                {/* Main Navigation Links */}
+                <nav className="flex h-full items-center gap-6 sm:gap-8 overflow-x-auto no-scrollbar scroll-smooth flex-1">
+                    {links.map((link) => (
+                        <Link
+                            key={link.name}
+                            href={link.href}
+                            className="relative flex h-full items-center whitespace-nowrap text-[13px] font-medium text-zinc-600 transition-all hover:text-indigo-600 group"
+                        >
+                            {link.name}
+                            {(link.name.includes("Forge") || link.name === "Events") && (
+                                <ChevronDown size={12} className="ml-1 text-zinc-400 group-hover:text-indigo-400 transition-colors" />
+                            )}
+                            {/* Animated Underline */}
+                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full" />
+                        </Link>
+                    ))}
+                </nav>
 
-                <div className="ml-auto flex items-center gap-6">
-                    <Link href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-700 sm:block">
+                {/* Right Section - CTA */}
+                <div className="hidden items-center gap-6 border-l border-zinc-100 pl-6 sm:flex">
+                    <Link
+                        href="#"
+                        className="text-[13px] font-semibold text-indigo-600 transition-colors hover:text-indigo-700"
+                    >
                         Become an Instructor
                     </Link>
-                    <Link href="#" className="hidden text-sm font-medium text-zinc-500 hover:text-zinc-900 sm:block">
-                        Student Forge for Business
+                    <Link
+                        href="#"
+                        className="text-[13px] font-medium text-zinc-500 transition-colors hover:text-zinc-900"
+                    >
+                        Business
                     </Link>
                 </div>
             </div>
