@@ -35,11 +35,11 @@ export default function Navbar() {
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-2">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-indigo-600 shadow-lg shadow-indigo-200 transition-transform group-hover:scale-105">
+                        <div className="relative flex h-9 w-9 items-center justify-center transition-transform group-hover:scale-105">
                             <img
                                 src="https://ik.imagekit.io/dypkhqxip/sf-next-logo"
                                 alt="Student Forge Logo"
-                                className="h-full w-full object-cover"
+                                className="h-full w-full object-contain"
                             />
                         </div>
                         <span className="text-xl font-bold tracking-tight text-zinc-900">
