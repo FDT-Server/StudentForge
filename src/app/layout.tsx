@@ -4,6 +4,7 @@ import "./globals.css";
 import TopBanner from "@/components/TopBanner";
 import Navbar from "@/components/Navbar";
 import SubNavbar from "@/components/SubNavbar";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <main className="pt-[124px]">
           {children}
         </main>
+        <WhatsAppButton />
       </body>
     </html>
   );
