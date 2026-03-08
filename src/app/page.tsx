@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Code, Rocket, Users } from "lucide-react";
 import Hero from "@/components/Hero";
 import MissionVision from "@/components/MissionVision";
+import Ecosystem from "@/components/Ecosystem";
 
 export default function Home() {
   return (
@@ -11,37 +11,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <MissionVision />
-
-        {/* Features Section */}
-        <section id="features" className="bg-zinc-50 py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600 tracking-wide">Next generation learning</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-                Everything you need to thrive in the modern world
-              </p>
-            </div>
-            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-                <FeatureCard
-                  icon={<Code className="h-6 w-6" />}
-                  title="Hands-on Projects"
-                  description="Build real-world applications and projects that solidify your understanding and showcase your skills."
-                />
-                <FeatureCard
-                  icon={<Users className="h-6 w-6" />}
-                  title="Global Community"
-                  description="Connect with fellow learners and mentors from around the world. Learn, share, and grow together."
-                />
-                <FeatureCard
-                  icon={<Rocket className="h-6 w-6" />}
-                  title="Career Acceleration"
-                  description="Get access to exclusive job boards, interview prep, and career coaching to land your dream job."
-                />
-              </dl>
-            </div>
-          </div>
-        </section>
+        <Ecosystem />
       </main>
 
       {/* Footer */}
@@ -69,18 +39,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
-  );
-}
-
-function FeatureCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
-  return (
-    <div className="group relative flex flex-col rounded-3xl border border-zinc-100 bg-white p-8 transition-all hover:border-indigo-100 hover:shadow-2xl hover:shadow-indigo-50">
-      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-        {icon}
-      </div>
-      <dt className="mt-6 text-xl font-bold text-zinc-900">{title}</dt>
-      <dd className="mt-4 text-base leading-7 text-zinc-600">{description}</dd>
     </div>
   );
 }
