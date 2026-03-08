@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Bell } from "lucide-react";
 
 export default function TopBanner() {
     return (
@@ -20,8 +20,8 @@ export default function TopBanner() {
             </div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                 <p className="text-sm leading-6 text-white flex items-center gap-2">
-                    <Sparkles size={14} className="text-indigo-400" />
-                    <strong className="font-semibold">Student Forge Fall 2024</strong>
+                    <Bell size={14} className="text-indigo-400" />
+                    <strong className="font-semibold">Student Forge Fall 2026</strong>
                     <svg
                         viewBox="0 0 2 2"
                         className="mx-2 inline h-0.5 w-0.5 fill-current"
